@@ -1,0 +1,19 @@
+* written in node.js
+	* multiple pages for different views however each page will then be socket driven
+* initial datastore as a json flat file
+* browser popup windows for log files
+* easy to customise and create new template configuration pages
+	* when making a new apps, select a template for that kind of thing
+	* come preinstalled with templates for webapps, wordpress, static files
+	* Templates will define the interface for creating and editing a <name> as well as responding to a set of data requests such as "name" and "running status" 
+	* Templates will NOT define where the app data is stored (a path will be specified), API must be used for starting external processes
+	* Templates will be given an abstracted socket to the client code
+* API avalible for templates to start and stop processes/call system commands and monitor them
+* Each app will have its own folder within /server/apps
+	* Folder will contain
+		* /approot
+		* /logs
+			* /stdout
+			* /stderr
+		* /keyfile - if nginx authentication is enabled
+ 
