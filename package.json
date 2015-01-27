@@ -1,0 +1,8 @@
+{
+	 "name": "server-manager"
+	,"version": "0.0.1"
+	,"dependencies": {
+		 "express": "latest"
+		,"async": "latest"
+	}
+}
