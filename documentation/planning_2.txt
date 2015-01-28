@@ -7,4 +7,4 @@ Server manager attempt 2
 * running state is remembered and ./run is auto called on startup
 * a port is dynamically assigned on startup from a list of avalible ports, ensure no port is reused
 * Projects are all pulled from github, new projects will allow for a github url to be entered
-
+* notifications via pushover whenever an app crashes
