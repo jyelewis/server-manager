@@ -1,0 +1,10 @@
+Server manager attempt 2
+
+* No templates
+* Simple list of setup apps
+* Each app is executed by running ./run
+* each app is setup by running ./setup
+* running state is remembered and ./run is auto called on startup
+* a port is dynamically assigned on startup from a list of avalible ports, ensure no port is reused
+* Projects are all pulled from github, new projects will allow for a github url to be entered
+

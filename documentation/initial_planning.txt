@@ -31,4 +31,5 @@ App templates objects:
 
 	* Each template will be passed an app object which contains setStatus function, current running status, directory url, port number
 	* TEMPLATES MUST RUN DAEMONS VIA THE APP.RUNDAEMON COMMAND AND REGISTER FOR NGINX VIA THE APP.SERVERREGISTER() FUNCTIONS
-	* 😜
+
+
