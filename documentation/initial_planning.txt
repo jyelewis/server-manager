@@ -17,3 +17,18 @@
 			* /stderr
 		* /keyfile - if nginx authentication is enabled
  
+App templates objects:
+	* Each app template will have a .js file which contains a description of the template as well as an app object to use for any apps of that template type
+		* Attributes:
+			* TemplateName
+			* CanBuild - Should the build button be shown
+		* methods within app object
+			* load() - called when the server is started, ensure the app is running/not running correctly
+			* start() - called when start is clicked (expected to set that app.status property)
+			* stop() - similer to start (expected to set the app.status property)
+			* restart() - calls start then stop by default, can be overwridden
+			* build() - runs when build button is clicked
+
+	* Each template will be passed an app object which contains setStatus function, current running status, directory url, port number
+	* TEMPLATES MUST RUN DAEMONS VIA THE APP.RUNDAEMON COMMAND AND REGISTER FOR NGINX VIA THE APP.SERVERREGISTER() FUNCTIONS
+	* 😜
