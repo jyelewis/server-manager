@@ -15,10 +15,10 @@ var msg = {
     priority: 1
 };
 
-p.send( msg, function( err, result ) {
-    if ( err ) {
+p.send(msg, function(err, result) {
+    if (err) {
         throw err;
     }
 
-    console.log( result );
+    console.log(result);
 });
